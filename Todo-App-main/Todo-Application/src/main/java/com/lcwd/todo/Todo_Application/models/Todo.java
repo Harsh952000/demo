@@ -13,7 +13,10 @@ public class Todo {
 
     @JsonFormat(pattern = "dd/mm/yyyy")
     private Date todoDate;
+    public Todo()
+    {
 
+    }
     public Todo(int id, String title, String content, String status,Date addedDate,Date todoDate) {
         this.id = id;
         this.title = title;
